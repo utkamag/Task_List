@@ -6,14 +6,17 @@ document.addEventListener('DOMContentLoaded', function () {
     function addTask() {
         let task_input = document.getElementById("task_input").value
 
+        document.getElementById("list").style.visibility = "visible";
+
         function localStorages() {
 
-        localStorage.setItem("data", task_input) // Local storage (тут, блин, не работает)
+        localStorage.setItem("data", task_input) // Local storage (тут не работает)
         let localData = localStorage.getItem("data")
         console.log(localData)
         document.getElementById("list_text").innerHTML += localData
         }
         document.getElementById("task_input").value = ""
+
 
         localStorages()
     }
@@ -23,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    // Удаляем задачи
+    // Удаляем все задачи
 
     function deleteTasks() {
         document.getElementById("task_delete").addEventListener("click", function () {
-            document.getElementById("list").remove()
+            document.location.reload()
         })
     }
 
@@ -67,7 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function deleteElement() {
         document.getElementById("list_delete").addEventListener("click", function () {
-            document.getElementById("list").remove()
+            document.location.reload()
+            document.getElementById("")
         })
     }
 
