@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/Img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Task List</title>
+</head>
+<body>
+
+<! -- Заголовок-->
+
+<h1 class="title">Список дел</h1>
+
+
+<! -- Task management -->
+
+<! -- Пишем первый блок "Управление задачами" -->
+
+<div class="task">
+    <input id="task_input" class="task_input" type="text" placeholder="Введите список ваших задач">
+    <div class="task_buttons">
+        <button id="task_add" class="task_add">Добавить задачу</button>
+        <button id="task_delete" class="task_delete">Удалить все задачи</button>
+        <button id="task_ready" class="task_ready">Все задачи выполнены!</button>
+    </div>
+</div>
+
+<! -- Task list -->
+
+<! -- Второй блок "Список задач" -->
+
+<div id="list" class="list">
+    <div id="list_text" class="list_text"></div>
+    <div id="list_buttons" class="list_buttons">
+        <button id="list_done" class="list_done">Задача выполнена</button>
+        <button id="list_not_done" class="list_not_done">Задача не выполнена</button>
+        <button id="list_delete" class="list_delete">Удалить задачу</button>
+    </div>
+    <img id="list_img" class="list_img" src="Img/false.png" alt="Задача не выполнена" width=70px>
+</div>
+
+<script src="app.js"></script>
+
+
+</body>
+</html>

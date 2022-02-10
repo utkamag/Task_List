@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/* Title */
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Div */
+
+.div:nth-child(first) {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: gray;
+}
+
+/* Task */
+
+.task {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+.task_input {
+    width: 400px;
+    height: 200px;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    cursor: text;
+}
+
+.task_input::placeholder {
+    text-align: center;
+
+}
+
+.task_buttons {
+    margin: 80px 0 0 20px;
+    justify-content: space-between;
+}
+
+/* List */
+
+.list {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.list_text {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-family: "Roboto Light";
+    font-size: 25px;
+
+
+}
+
+.list_buttons {
+    justify-content: space-between;
+
+}
+
+.list_img {
+    margin-left: 40px;
+
+    align-items: center;
+}
+
+
+
